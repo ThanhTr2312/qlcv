@@ -8,14 +8,30 @@ const thongkeRoutes = require("./app/routes/thongke.route")
 const duanRoutes = require("./app/routes/duan.routes")
 const { BadRequestError } = require("./app/helpers/errors");
 const path = require('path');
+const multer = require("multer");
 
 
 const app = express();
+
+
+const upload = multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "src/public/pdf"); // Thay đổi đường dẫn thư mục lưu trữ tệp tải lên
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
+        cb(null, file.originalname); // Sử dụng file.originalname làm tên tệp
+      },
+    }),
+  });
 
 app.use(cors({ origin: config.origins }));
 
 // parse requests of content-type - application/json
 app.use(express.json());
+
+app.use(upload.array("files", 20));
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
