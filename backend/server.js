@@ -6,6 +6,7 @@ const nguoidungRoutes = require("./app/routes/nguoidung.route");
 const authRoutes = require("./app/routes/auth.route");
 const thongkeRoutes = require("./app/routes/thongke.route")
 const duanRoutes = require("./app/routes/duan.routes")
+const congviecRoutes = require("./app/routes/congviec.routes")
 const { BadRequestError } = require("./app/helpers/errors");
 const path = require('path');
 const multer = require("multer");
@@ -66,7 +67,7 @@ app.use('/api', thongkeRoutes);
 
 app.use('/api', duanRoutes);
 
-// app.use('/api', congviecRoutes);
+app.use('/api', congviecRoutes);
 
 
 //handle 404 response
