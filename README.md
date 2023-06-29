@@ -37,21 +37,32 @@ Logs in a user and retrieves an access token.
 }
 ```
 
-# Job (CongViec) API
+# Task (CongViec) API
 
 Provide information about the APIs related to "CongViec" (Job).
 
-### 1. Get all Jobs
+## 1. Get all Tasks
 
-- URL: `http://localhost:8000/api/congviec`
+This API allows users to get all the tasks.
+
+### Request
+
 - Method: `GET`
+- URL: `http://localhost:8000/api/congviec`
 
-### 2. Get a specific Job
+### Response
+
+- Body:
+```json
+{[\n    {\n        \"MaCongViec\": \"290620231533462138889\",\n        \"TenCongViec\": \"Cong viec A\",\n        \"MoTaCongViec\": \"Mo ta cong viec A\",\n        \"NgayBatDau\": \"2023-06-14T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-14T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaCongViec\": \"290620231533464038125\",\n        \"TenCongViec\": \"Cong viec E\",\n        \"MoTaCongViec\": \"Mo ta cong viec E\",\n        \"NgayBatDau\": \"2023-06-18T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-18T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaCongViec\": \"290620231533464818686\",\n        \"TenCongViec\": \"Cong viec H\",\n        \"MoTaCongViec\": \"Mo ta cong viec H\",\n        \"NgayBatDau\": \"2023-06-21T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-21T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaCongViec\": \"29062023153346606794\",\n        \"TenCongViec\": \"Cong viec B\",\n        \"MoTaCongViec\": \"Mo ta cong viec B\",\n        \"NgayBatDau\": \"2023-06-15T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-15T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 0,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaCongViec\": \"290620231533467265767\",\n        \"TenCongViec\": \"Cong viec D\",\n        \"MoTaCongViec\": \"Mo ta cong viec D\",\n        \"NgayBatDau\": \"2023-06-17T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-17T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaCongViec\": \"290620231533467723433\",\n        \"TenCongViec\": \"Cong viec G\",\n        \"MoTaCongViec\": \"Mo ta cong viec G\",\n        \"NgayBatDau\": \"2023-06-20T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-20T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaCongViec\": \"290620231533468048956\",\n        \"TenCongViec\": \"Cong viec I\",\n        \"MoTaCongViec\": \"Mo ta cong viec I\",\n        \"NgayBatDau\": \"2023-06-22T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-22T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaCongViec\": \"290620231533468978578\",\n        \"TenCongViec\": \"Cong viec C\",\n        \"MoTaCongViec\": \"Mo ta cong viec C\",\n        \"NgayBatDau\": \"2023-06-16T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-16T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaCongViec\": \"290620231533469177816\",\n        \"TenCongViec\": \"Cong viec F\",\n        \"MoTaCongViec\": \"Mo ta cong viec F\",\n        \"NgayBatDau\": \"2023-06-19T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-19T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 0,\n        \"MaDuAn\": \"1234567890\"\n    }\n]}
+``` 
+
+## 2. Get a specific Task
 
 - URL: `http://localhost:8000/api/congviec/24062023195822330244`
 - Method: `GET`
 
-### 3. Create a new Job
+## 3. Create a new Task
 
 - URL: `http://localhost:8000/api/congviec/DA1687249796172`
 - Method: `POST`
