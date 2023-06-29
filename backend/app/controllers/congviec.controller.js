@@ -6,7 +6,7 @@ const fs = require('fs');
 
 /// GET /api/congViec
 // GET http://localhost:8000/api/congViec
-exports.findAll = (req, res) => {
+const findAll = (req, res) => {
     const column = req.query.column;
     const type = req.query.type;
     const page = parseInt(req.query.page);
@@ -76,7 +76,7 @@ exports.findAll = (req, res) => {
 
   // GET /api/congViec/:id
 // GET http://localhost:8000/api/congviec/:id
-exports.findid = (req, res) => {
+const findid = (req, res) => {
     const maCongViec = req.params.id;
     res.header("Access-Control-Allow-Origin", "*");
     const query = "SELECT * FROM congviec WHERE macongviec = ? AND trangthai != 6";
@@ -102,7 +102,7 @@ exports.findid = (req, res) => {
   
   // GET /api/timCongViec
 // GET http://localhost:8000/api/timCongViec?search=HHHFH
-exports.findOne = (req, res) => {
+const findOne = (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     const searchTerm = req.query.search;
     // Kiểm tra nếu không có giá trị tìm kiếm được cung cấp
@@ -129,7 +129,7 @@ exports.findOne = (req, res) => {
   
   // POST /api/congviec/:id
 // POST http://localhost:8000/api/congviec/:id
-exports.create = (req, res) => {
+const create = (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     const maDuAn = req.params.id;
     const {
@@ -168,7 +168,7 @@ exports.create = (req, res) => {
 
   // PUT /api/congviec/:id
 // PUT http://localhost:8000/api/congviec/:id
-exports.update = (req, res) => {
+const update = (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     const maCongViec = req.params.id;
     const {
@@ -213,7 +213,7 @@ exports.update = (req, res) => {
 
   // PATCH /api/congviec/:id
 // PATCH http://localhost:8000/api/congviec/:id
-exports.delete = (req, res) => {
+const deleteTT = (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     const maCongViec = req.params.id;
     const TrangThai = 6;
@@ -235,7 +235,7 @@ exports.delete = (req, res) => {
 
 // DELETE /api/xoaCongViecVinhVien/:id
 // DELETE http://localhost:8000/api/xoaCongViecVinhVien/:id
-exports.deleteVV = (req, res) => {
+const deleteVV = (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     const maCongViec = req.params.id;
     const query = "SELECT * FROM nguoidung_congviec WHERE macongviec = ?";
@@ -288,7 +288,7 @@ exports.deleteVV = (req, res) => {
 
   // Phân công công việc
 // POST http://localhost:8000/api/phanCongCongViec/:id
-exports.phanCongCongViec = (req, res, next) => {
+const phanCongCongViec = (req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   const maCongViec = req.params.id;
     const { MaNguoiDung } = req.body;
@@ -394,7 +394,7 @@ exports.phanCongCongViec = (req, res, next) => {
 
 /// GET /api/congviecbyduan/:id
 // GET http://localhost:8000/api/congviecbyduan/:id
-exports.findByDuAn = (req, res) => {
+const findByDuAn = (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   const maDuAn = req.params.id;
   const query = "SELECT * FROM congviec WHERE MaDuAn= ? AND trangthai != 6;";
@@ -436,7 +436,7 @@ const excelDateToJSDate = (serial) => {
 
 /// POST /api/congviecfile/:id
 // POST http://localhost:8000/api/congviecfile/:id
-exports.createFromFile = (req, res, next) => {
+const createFromFile = (req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   try {
     const maDuAn = req.params.id;
@@ -510,7 +510,7 @@ exports.createFromFile = (req, res, next) => {
 // WHERE nguoidung_congviec.MaCongViec = '230620231910001704416';
 /// GET /api/nguoidungbycongviec/:id
 // GET http://localhost:8000/api/nguoidungbycongviec/:id
-exports.findNguoiDungByCongViec = (req, res) => {
+const findNguoiDungByCongViec = (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   const maCongViec = req.params.id;
   const query = "SELECT * FROM nguoidung JOIN nguoidung_congviec ON nguoidung.MaNguoiDung = nguoidung_congviec.MaNguoiDung JOIN congviec ON congviec.MaCongViec = nguoidung_congviec.MaCongViec WHERE nguoidung_congviec.MaCongViec = ?";
@@ -540,7 +540,7 @@ exports.findNguoiDungByCongViec = (req, res) => {
 // WHERE congviec_tailieucv.MaCongViec = '230620231910001704416' AND congviec_tailieucv.TrangThai != 6;
 /// GET /api/tailieubycongviec/:id
 // GET http://localhost:8000/api/tailieubycongviec/:id
-exports.findTaiLieuByCongViec = (req, res) => {
+const findTaiLieuByCongViec = (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   const maCongViec = req.params.id;
   const query = "SELECT * FROM tailieucv JOIN congviec_tailieucv ON tailieucv.MaTaiLieuCV = congviec_tailieucv.MaTaiLieuCV JOIN congviec ON congviec.MaCongViec = congviec_tailieucv.MaCongViec WHERE congviec_tailieucv.MaCongViec = ? AND congviec_tailieucv.TrangThai != 6";
@@ -566,7 +566,7 @@ exports.findTaiLieuByCongViec = (req, res) => {
 
 // Sửa phân công công việc
 // PUT http://localhost:8000/api/editPhanCongCongViec/:id
-exports.editPhanCongCongViec = (req, res, next) => {
+const editPhanCongCongViec = (req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   const maCongViec = req.params.id;
   const { MaNguoiDung } = req.body;
@@ -674,3 +674,22 @@ exports.editPhanCongCongViec = (req, res, next) => {
     });
   });
 };
+
+
+
+module.exports = {
+  findAll,
+  findid,
+  create,
+  createFromFile,
+  findOne,
+  findByDuAn,
+  update,
+  deleteTT,
+  deleteVV,
+  phanCongCongViec,
+  editPhanCongCongViec,
+  findNguoiDungByCongViec, 
+  findTaiLieuByCongViec,
+}
+
