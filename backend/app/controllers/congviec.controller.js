@@ -675,6 +675,36 @@ const editPhanCongCongViec = (req, res, next) => {
   });
 };
 
+// SELECT CV.TenCongViec AS TenCongViec, TL.TenTaiLieuCV AS TenTaiLieu, CONCAT(ND.HoLot, ' ', ND.Ten) AS HoVaTen, CV.MoTaCongViec AS MoTaCongViec, CV.TrangThai AS TrangThaiCongViec
+// FROM nguoidung ND
+// JOIN nguoidung_congviec NDCV ON ND.MaNguoiDung = NDCV.MaNguoiDung
+// JOIN congviec CV ON NDCV.MaCongViec = CV.MaCongViec
+// JOIN congviec_tailieucv CVTL ON CV.MaCongViec = CVTL.MaCongViec
+// JOIN tailieucv TL ON CVTL.MaTaiLieuCV = TL.MaTaiLieuCV
+// WHERE CV.MaCongViec = '290620231535405103121';
+const detailCongViec = (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  const maCongViec = req.params.id;
+  const query = "SELECT CV.TenCongViec AS TenCongViec, TL.TenTaiLieuCV AS TenTaiLieu, CONCAT(ND.HoLot, ' ', ND.Ten) AS HoVaTen, CV.MoTaCongViec AS MoTaCongViec, CV.TrangThai AS TrangThaiCongViec FROM nguoidung ND JOIN nguoidung_congviec NDCV ON ND.MaNguoiDung = NDCV.MaNguoiDung JOIN congviec CV ON NDCV.MaCongViec = CV.MaCongViec JOIN congviec_tailieucv CVTL ON CV.MaCongViec = CVTL.MaCongViec JOIN tailieucv TL ON CVTL.MaTaiLieuCV = TL.MaTaiLieuCV WHERE CV.MaCongViec = ?;";
+    // Thực hiện truy vấn
+    connection.query(
+      query,
+      [maCongViec],
+      (err, results) => {
+        if (err) {
+          console.error("Lỗi truy vấn MySQL: " + err.stack);
+          return res.status(500).json({ error: "Lỗi truy vấn cơ sở dữ liệu" });
+        }
+        //Trả về kết quả dưới dạng JSON
+        if (results.length == 0) {
+          return res.status(200).json({ success: "Không có "+ maCongViec });
+        } else {
+          res.json(results);
+        }
+        
+      }
+    );
+};
 
 
 module.exports = {
@@ -691,5 +721,6 @@ module.exports = {
   editPhanCongCongViec,
   findNguoiDungByCongViec, 
   findTaiLieuByCongViec,
+    detailCongViec,
 }
 
