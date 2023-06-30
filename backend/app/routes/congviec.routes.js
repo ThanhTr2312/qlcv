@@ -53,6 +53,12 @@ congViecRouter.get("/nguoidungbycongviec/:id", congViecController.findNguoiDungB
 // Retrieve 1 congviec; id là mã công việc
 congViecRouter.get("/tailieubycongviec/:id", congViecController.findTaiLieuByCongViec);
 
+
+
+
+// Retrieve 1 congviec; id là mã công việc
+congViecRouter.get("/detailCongViec/:id", congViecController.detailCongViec);
+
 module.exports = congViecRouter;
 
 
