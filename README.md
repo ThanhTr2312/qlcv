@@ -16,13 +16,13 @@ Logs in a user and retrieves an access token.
 ### Request
 
 - Method: POST
-- Headers:
-  - Content-Type: application/json (disabled)
-  - Authorization: (disabled)
-
-- Body (urlencoded):
-  - Username: thanh11
-  - Password: 123123123
+- Body:
+```json
+{
+  "Username": "thanh11",
+  "Password": "123123123"
+}
+```
 
 ### Response
 
@@ -39,7 +39,7 @@ Logs in a user and retrieves an access token.
 
 # Task (CongViec) API
 
-Provide information about the APIs related to "CongViec" (Job).
+Provide information about the APIs related to "CongViec" (task).
 
 ## 1. Get all Tasks
 
@@ -49,6 +49,7 @@ This API allows users to get all the tasks.
 
 - Method: `GET`
 - URL: `http://localhost:8000/api/congviec`
+- 
 
 ### Response
 
@@ -78,24 +79,24 @@ This API allows users to get all the tasks.
     }
     ```
 
-### 4. Upload a file for a Job
+### 4. Upload a file for a Task
 
 - URL: `http://localhost:8000/api/congviecfile/DA1687249796172`
 - Method: `POST`
 - Body: Form Data
     - `files` (file): `/D:/Downloads/testCV.xlsx`
 
-### 5. Search for Jobs
+### 5. Search for Tasks
 
 - URL: `http://localhost:8000/api/timCongViec?search=Test`
 - Method: `GET`
 
-### 6. Get Jobs by Project
+### 6. Get Tasks by Project
 
 - URL: `http://localhost:8000/api/congviecbyduan/DA1687249796172`
 - Method: `GET`
 
-### 7. Update a Job
+### 7. Update a Task
 
 - URL: `http://localhost:8000/api/congviec/240620232018092977672`
 - Method: `PUT`
@@ -112,17 +113,17 @@ This API allows users to get all the tasks.
     }
     ```
 
-### 8. Delete a Job
+### 8. Delete a Task
 
 - URL: `http://localhost:8000/api/congviec/240620232018092977672`
 - Method: `DELETE`
 
-### 9. Permanently delete a Job
+### 9. Permanently delete a Task
 
 - URL: `http://localhost:8000/api/xoaCongViecVinhVien/240620232018092977672`
 - Method: `DELETE`
 
-### 10. Assign Job to Users
+### 10. Assign Task to Users
 
 - URL: `http://localhost:8000/api/congviec/phanCongCongViec/290620231400489248165`
 - Method: `POST`
