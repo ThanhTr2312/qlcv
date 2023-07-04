@@ -96,8 +96,8 @@
 - React
 - HTML/CSS
 
-  ## APIs Collection
+## APIs Collection
 
-  Danh sách các API được tìm thấy trong `QuanLyCongViec.postman_collection.json`.
+Danh sách các API được tìm thấy trong `QuanLyCongViec.postman_collection.json`.
 
   
