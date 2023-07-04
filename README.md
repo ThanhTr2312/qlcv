@@ -12,7 +12,7 @@
 - Thống kê dự án và công việc
 - Lưu trữ và quản lý tài liệu liên quan đến dự án và công việc.
 - Quản lý người dùng bao gồm thêm, sửa, xóa người dùng.
-- 
+
 ## Cài đặt
 
 1. Clone repository này về máy của bạn:
@@ -51,20 +51,39 @@
    cd ..
    ```
 
+7. Thiết lập cấu hình cơ sở dữ liệu MySQL: Tạo một cơ sở dữ liệu mới trong MySQL và ghi lại thông tin cấu hình.
 
-7. Chạy ứng dụng:
+8. Đặt cấu hình môi trường:
+
+   Trong tệp `app/config/index.js`, chỉnh sửa cấu hình trực tiếp bằng cách thay đổi giá trị trong đối tượng `config.database`. Ví dụ:
+
+     ```
+     const config = {
+         // ...
+         database: {
+                 host: 'your-database-host',
+                 user: 'your-database-username',
+                 password: 'your-database-password',
+                 database: 'your-database-name',
+             },
+         // ...
+     };
+     ```
+
+9. Chạy ứng dụng:
 
    - Chạy server:
 
      ```
-     npm run start
+     cd backend
+     npm start
      ```
 
    - Chạy client:
 
      ```
-     cd client
-     npm run start
+     cd frontend
+     npm start
      ```
 
    Ứng dụng sẽ được chạy tại `http://localhost:3000`.
@@ -77,4 +96,8 @@
 - React
 - HTML/CSS
 
+  ## APIs Collection
 
+  Danh sách các API được tìm thấy trong `QuanLyCongViec.postman_collection.json`.
+
+  
