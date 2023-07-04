@@ -1,0 +1,3648 @@
+{
+	"info": {
+		"_postman_id": "3bb2ca02-52c0-4654-b97e-cdc7893214b0",
+		"name": "QuanLyCongViec12723",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DangNhap",
+			"item": [
+				{
+					"name": "Đăng nhập",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Username",
+									"value": "manager",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "123123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Đăng nhập",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "Username",
+											"value": "manager",
+											"type": "text"
+										},
+										{
+											"key": "Password",
+											"value": "123123123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "403"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"193-OSKEEQ2gKBa7VNIEKk1wHgEkG0o\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "connect.sid=s%3AZs3VLRnfbLyT4SY_QdPvfzyfCMOfQVDi.jCzFK5%2FvKp6jLahLkdDGgdkdOAXYobTEhgxvGmGfYFU; Path=/; HttpOnly"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 09:53:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5d022b88-4ab9-4aaa-aa9b-7d914b26f093\",\n    \"Username\": \"manager\",\n    \"MaLoaiNguoiDung\": \"03\",\n    \"Role\": \"manager\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6IjVkMDIyYjg4LTRhYjktNGFhYS1hYTliLTdkOTE0YjI2ZjA5MyIsIlVzZXJuYW1lIjoibWFuYWdlciIsIk1hTG9haU5ndW9pRHVuZyI6IjAzIiwiUm9sZSI6Im1hbmFnZXIiLCJpYXQiOjE2ODgzNzgwMzksImV4cCI6MTY4ODQ2NDQzOX0.jv-1Bmx3G26NdytyoaDoCr9JE6XD8gVeQuIgxRSO0Ow\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "NguoiDung",
+			"item": [
+				{
+					"name": "Lấy một người dùng",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung/0e599adb-e28d-40b6-b05c-06b053d5f9c1",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung",
+								"0e599adb-e28d-40b6-b05c-06b053d5f9c1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy một người dùng",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung/0e599adb-e28d-40b6-b05c-06b053d5f9c1",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung",
+										"0e599adb-e28d-40b6-b05c-06b053d5f9c1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "386"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"182-rc53zjsfD4UbxntkgTbp8im+T2c\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:06:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"MaNguoiDung\": \"0e599adb-e28d-40b6-b05c-06b053d5f9c1\",\n    \"HoLot\": \"Lê Lộc\",\n    \"Ten\": \"Luyến\",\n    \"Email\": \"luyen@gmail.com\",\n    \"DiaChi\": \"ktx DHCT đường 3/2, Ninh Kiều, Cần Thơ\",\n    \"SoDienThoai\": \"0368970567\",\n    \"ViTri\": \"1\",\n    \"GioiTinh\": {\n        \"type\": \"Buffer\",\n        \"data\": [\n            1\n        ]\n    },\n    \"TrangThai\": 0,\n    \"Username\": \"NDluyen\",\n    \"Password\": \"$2b$10$BvzAS9oppnaU0fc26JSDpeuYzZSAjhxkiPdl6YUFIEP9vw5z029Ca\",\n    \"MaLoaiNguoiDung\": \"04\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Lấy tất cả người dùng",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung/",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy tất cả người dùng",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung/",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5091"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13e3-HeENIstgzF0vU352c98lvkIPJVg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:06:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaNguoiDung\": \"0e599adb-e28d-40b6-b05c-06b053d5f9c1\",\n        \"HoLot\": \"Lê Lộc\",\n        \"Ten\": \"Luyến\",\n        \"Email\": \"luyen@gmail.com\",\n        \"DiaChi\": \"ktx DHCT đường 3/2, Ninh Kiều, Cần Thơ\",\n        \"SoDienThoai\": \"0368970567\",\n        \"ViTri\": \"1\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"NDluyen\",\n        \"Password\": \"$2b$10$BvzAS9oppnaU0fc26JSDpeuYzZSAjhxkiPdl6YUFIEP9vw5z029Ca\",\n        \"MaLoaiNguoiDung\": \"04\"\n    },\n    {\n        \"MaNguoiDung\": \"123\",\n        \"HoLot\": \"test edit\",\n        \"Ten\": \"test edit\",\n        \"Email\": \"test@gmail.com\",\n        \"DiaChi\": \"test edit\",\n        \"SoDienThoai\": \"test edit\",\n        \"ViTri\": \"test edit\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": null,\n        \"Username\": \"thanh\",\n        \"Password\": \"123123123\",\n        \"MaLoaiNguoiDung\": \"01\"\n    },\n    {\n        \"MaNguoiDung\": \"455591b6-8050-4590-8c0d-cb4315fc6da1\",\n        \"HoLot\": \"Tran1\",\n        \"Ten\": \"Thanh\",\n        \"Email\": \"t@gmail.com\",\n        \"DiaChi\": \"ct\",\n        \"SoDienThoai\": \"0123456789\",\n        \"ViTri\": \"NV\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"director\",\n        \"Password\": \"$2b$10$zxypFKrE4giC3sCIghSCs.Khewv1fbLD8AJSSoWZ3BPwolZgBDGXS\",\n        \"MaLoaiNguoiDung\": \"02\"\n    },\n    {\n        \"MaNguoiDung\": \"5d022b88-4ab9-4aaa-aa9b-7d914b26f093\",\n        \"HoLot\": \"Tran1\",\n        \"Ten\": \"Thanh\",\n        \"Email\": \"t@gmail.com\",\n        \"DiaChi\": \"ct\",\n        \"SoDienThoai\": \"0123456789\",\n        \"ViTri\": \"NV\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"manager\",\n        \"Password\": \"$2b$10$gHWNQhQcetfnUq.YZ8TuKerwXag7/ci78rYr.eZj7sOZDj9qGBtqC\",\n        \"MaLoaiNguoiDung\": \"03\"\n    },\n    {\n        \"MaNguoiDung\": \"c242103f-c06f-44b8-8c21-c1ea4d3b4c50\",\n        \"HoLot\": \"Tran1\",\n        \"Ten\": \"Thanh\",\n        \"Email\": \"t@gmail.com\",\n        \"DiaChi\": \"ct\",\n        \"SoDienThoai\": \"0123456789\",\n        \"ViTri\": \"NV\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"admin1\",\n        \"Password\": \"$2b$10$bAIMO.SHnRlslU8paWYwhOPZyFXWvD0H4ZFK.3QElVeHFVFpxwMMy\",\n        \"MaLoaiNguoiDung\": \"01\"\n    },\n    {\n        \"MaNguoiDung\": \"c9fc8097-8f3e-4ae7-a3d5-f2667679ade3\",\n        \"HoLot\": \"Tran1\",\n        \"Ten\": \"Thanh\",\n        \"Email\": \"t@gmail.com\",\n        \"DiaChi\": \"ct\",\n        \"SoDienThoai\": \"0123456789\",\n        \"ViTri\": \"NV\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"member\",\n        \"Password\": \"$2b$10$8ZDfp64nFfVOohVp7ln7I.cIgYeZpIowCefr1hdWV3subI2rsfyNi\",\n        \"MaLoaiNguoiDung\": \"04\"\n    },\n    {\n        \"MaNguoiDung\": \"ND1687228962390\",\n        \"HoLot\": \"Pham\",\n        \"Ten\": \"Thanh Thai\",\n        \"Email\": \"ptthai@gmail.com\",\n        \"DiaChi\": null,\n        \"SoDienThoai\": null,\n        \"ViTri\": null,\n        \"GioiTinh\": null,\n        \"TrangThai\": 0,\n        \"Username\": \"thanh\",\n        \"Password\": \"123123123\",\n        \"MaLoaiNguoiDung\": null\n    },\n    {\n        \"MaNguoiDung\": \"ND1687228976367\",\n        \"HoLot\": \"Pham\",\n        \"Ten\": \"Thanh Thai 2\",\n        \"Email\": \"ptthai@gmail.com\",\n        \"DiaChi\": null,\n        \"SoDienThoai\": null,\n        \"ViTri\": null,\n        \"GioiTinh\": null,\n        \"TrangThai\": 0,\n        \"Username\": \"thanh\",\n        \"Password\": \"123123123\",\n        \"MaLoaiNguoiDung\": null\n    },\n    {\n        \"MaNguoiDung\": \"ND1687841808378\",\n        \"HoLot\": \"Nguyễn\",\n        \"Ten\": \"Test23\",\n        \"Email\": \"thaictu191@gmail.com\",\n        \"DiaChi\": \"can thơ\",\n        \"SoDienThoai\": \"0258741369\",\n        \"ViTri\": \"can tho\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                0\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"lan1\",\n        \"Password\": \"123\",\n        \"MaLoaiNguoiDung\": null\n    },\n    {\n        \"MaNguoiDung\": \"ND1687873981053\",\n        \"HoLot\": \"Chua hoan thanh\",\n        \"Ten\": \"chua hoan thanh\",\n        \"Email\": \"chuahoanthanh@gmail.com\",\n        \"DiaChi\": \"Chua hoan thanh\",\n        \"SoDienThoai\": \"3123123121\",\n        \"ViTri\": \"Chua hoan thanh\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                0\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"chuahoanthanh\",\n        \"Password\": \"chuahoanthanh\",\n        \"MaLoaiNguoiDung\": null\n    },\n    {\n        \"MaNguoiDung\": \"ND1687874170341\",\n        \"HoLot\": \"Quốc\",\n        \"Ten\": \"Thái\",\n        \"Email\": \"testbody@gmail.com\",\n        \"DiaChi\": \"testbody\",\n        \"SoDienThoai\": \"3121312321\",\n        \"ViTri\": \"testbody\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                0\n            ]\n        },\n        \"TrangThai\": 1,\n        \"Username\": \"testbody\",\n        \"Password\": \"testbody\",\n        \"MaLoaiNguoiDung\": null\n    },\n    {\n        \"MaNguoiDung\": \"ND1687876741236\",\n        \"HoLot\": \"Nguyễn\",\n        \"Ten\": \"Thái\",\n        \"Email\": \"thaib1906344@student.ctu.edu.vn\",\n        \"DiaChi\": \"Ninh KIều Cần Thơ\",\n        \"SoDienThoai\": \"0849xx0949\",\n        \"ViTri\": \"Việt Nam\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                0\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"thaicit2019\",\n        \"Password\": \"0147\",\n        \"MaLoaiNguoiDung\": null\n    },\n    {\n        \"MaNguoiDung\": \"ND1687878006133\",\n        \"HoLot\": \"Huỳnh\",\n        \"Ten\": \"Hiền\",\n        \"Email\": \"phu@gmail.com\",\n        \"DiaChi\": \"Vĩnh Long\",\n        \"SoDienThoai\": \"0123456789\",\n        \"ViTri\": \"Test\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 1,\n        \"Username\": \"phu\",\n        \"Password\": \"1\",\n        \"MaLoaiNguoiDung\": null\n    },\n    {\n        \"MaNguoiDung\": \"ND1688217739000\",\n        \"HoLot\": \"Nguyen\",\n        \"Ten\": \"A\",\n        \"Email\": \"a@gmail.com\",\n        \"DiaChi\": \"địa chỉ a\",\n        \"SoDienThoai\": \"0321456987\",\n        \"ViTri\": \"vị trí a\",\n        \"GioiTinh\": null,\n        \"TrangThai\": 0,\n        \"Username\": \"admin\",\n        \"Password\": \"123\",\n        \"MaLoaiNguoiDung\": null\n    },\n    {\n        \"MaNguoiDung\": \"ND1688348747612\",\n        \"HoLot\": \"admin\",\n        \"Ten\": \"admin\",\n        \"Email\": \"t@gmail.com\",\n        \"DiaChi\": \"ct\",\n        \"SoDienThoai\": \"0123456789\",\n        \"ViTri\": \"NV\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"admin\",\n        \"Password\": \"$2b$10$BgjSpQXR64taRX0R1PVco.vNh0IU0c1/zz/HVxbe.IgU.kNXrXaPW\",\n        \"MaLoaiNguoiDung\": \"01\"\n    },\n    {\n        \"MaNguoiDung\": \"ND1688348933948\",\n        \"HoLot\": \"Nguyen\",\n        \"Ten\": \"A\",\n        \"Email\": \"a@gmail.com\",\n        \"DiaChi\": \"địa chỉ a\",\n        \"SoDienThoai\": \"0321456987\",\n        \"ViTri\": \"vị trí a\",\n        \"GioiTinh\": null,\n        \"TrangThai\": 0,\n        \"Username\": \"admin\",\n        \"Password\": \"$2b$10$0P5x3Q2rUrL0tTVJeddh..OI3biJdbNmikixqF8LizOyOejs9LyES\",\n        \"MaLoaiNguoiDung\": \"03\"\n    },\n    {\n        \"MaNguoiDung\": \"ND1688349065694\",\n        \"HoLot\": \"Nguyen\",\n        \"Ten\": \"B\",\n        \"Email\": \"b@gmail.com\",\n        \"DiaChi\": \"địa chỉ b\",\n        \"SoDienThoai\": \"021654789\",\n        \"ViTri\": \"vị trí b\",\n        \"GioiTinh\": null,\n        \"TrangThai\": 0,\n        \"Username\": \"test\",\n        \"Password\": \"$2b$10$1eaBMb7Y4O.EpuYd1PknxOGo/hLDijXKPhlgmqKH0O2lA1xt2FUkO\",\n        \"MaLoaiNguoiDung\": \"02\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Thêm một người dùng",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HoLot\": \"Lê Lộc\",\r\n    \"Ten\": \"Luyến\",\r\n    \"Email\": \"luyen@gmail.com\",\r\n    \"DiaChi\": \"ktx DHCT đường 3/2, Ninh Kiều, Cần Thơ\",\r\n    \"SoDienThoai\": \"0368970567\",\r\n    \"ViTri\": \"1\",\r\n    \"GioiTinh\": 1,\r\n    \"TrangThai\": 1,\r\n    \"Username\": \"NDluyen\",\r\n    \"Password\": \"NDluyen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Thêm một người dùng",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"HoLot\": \"Lê Lộc\",\r\n    \"Ten\": \"Luyến\",\r\n    \"Email\": \"luyen@gmail.com\",\r\n    \"DiaChi\": \"ktx DHCT đường 3/2, Ninh Kiều, Cần Thơ\",\r\n    \"SoDienThoai\": \"0368970567\",\r\n    \"ViTri\": \"1\",\r\n    \"GioiTinh\": 1,\r\n    \"TrangThai\": 1,\r\n    \"Username\": \"NDluyen\",\r\n    \"Password\": \"NDluyen\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "447"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1bf-ciX7EWQ16PKDYTCNNaL2kimLnU8\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "connect.sid=s%3AgyYJDFg32oew6pC3kftPjH5Dm8-faNef.wnN8XbfkW%2BD289kfYjQvyrrJb9kYUAm6OMi5f9%2F4pfY; Path=/; HttpOnly"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:06:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Thêm người dùng thành công.\",\n    \"nguoiDung\": {\n        \"MaNguoiDung\": \"0e599adb-e28d-40b6-b05c-06b053d5f9c1\",\n        \"HoLot\": \"Lê Lộc\",\n        \"Ten\": \"Luyến\",\n        \"Email\": \"luyen@gmail.com\",\n        \"DiaChi\": \"ktx DHCT đường 3/2, Ninh Kiều, Cần Thơ\",\n        \"SoDienThoai\": \"0368970567\",\n        \"ViTri\": \"1\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 0,\n        \"Username\": \"NDluyen\",\n        \"Password\": \"$2b$10$BvzAS9oppnaU0fc26JSDpeuYzZSAjhxkiPdl6YUFIEP9vw5z029Ca\",\n        \"MaLoaiNguoiDung\": \"04\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Xóa một người dùng",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung/e1255c0e-a787-4e71-b396-4df0a732419f",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung",
+								"e1255c0e-a787-4e71-b396-4df0a732419f"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Xóa một người dùng",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung/e1255c0e-a787-4e71-b396-4df0a732419f",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung",
+										"e1255c0e-a787-4e71-b396-4df0a732419f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f-XtaXlLrSxfTvpEEJJ+7yqkYLBSU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:08:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Xóa người dùng thành công.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Chỉnh sửa thông tin người dùng",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"HoLot\": \"Trần Thùy\",\r\n        \"Ten\": \"Trân\",\r\n        \"Email\": \"thuytran2@gmail.com\",\r\n        \"DiaChi\": \"hẻm 132, đường 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ\",\r\n        \"SoDienThoai\": \"674231589\",\r\n        \"ViTri\": \"0\",\r\n        \"GioiTinh\": 0,\r\n        \"TrangThai\": 1,\r\n        \"MaLoaiNguoiDung\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung/0e599adb-e28d-40b6-b05c-06b053d5f9c1",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung",
+								"0e599adb-e28d-40b6-b05c-06b053d5f9c1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Chỉnh sửa thông tin người dùng",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"HoLot\": \"Trần Thùy\",\r\n        \"Ten\": \"Trân\",\r\n        \"Email\": \"thuytran2@gmail.com\",\r\n        \"DiaChi\": \"hẻm 132, đường 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ\",\r\n        \"SoDienThoai\": \"674231589\",\r\n        \"ViTri\": \"0\",\r\n        \"GioiTinh\": 0,\r\n        \"TrangThai\": 1,\r\n        \"MaLoaiNguoiDung\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung/0e599adb-e28d-40b6-b05c-06b053d5f9c1",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung",
+										"0e599adb-e28d-40b6-b05c-06b053d5f9c1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "475"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1db-3uUqGwtZRPCLfsgedZILhnIKyLk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:10:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Chỉnh sửa người dùng thành công.\",\n    \"nguoiDung\": {\n        \"MaNguoiDung\": \"0e599adb-e28d-40b6-b05c-06b053d5f9c1\",\n        \"HoLot\": \"Trần Thùy\",\n        \"Ten\": \"Trân\",\n        \"Email\": \"thuytran2@gmail.com\",\n        \"DiaChi\": \"hẻm 132, đường 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ\",\n        \"SoDienThoai\": \"674231589\",\n        \"ViTri\": \"0\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                0\n            ]\n        },\n        \"TrangThai\": 1,\n        \"Username\": \"NDluyen\",\n        \"Password\": \"$2b$10$BvzAS9oppnaU0fc26JSDpeuYzZSAjhxkiPdl6YUFIEP9vw5z029Ca\",\n        \"MaLoaiNguoiDung\": \"04\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Tìm kiếm người dùng",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung/search?keyword=thanh",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung",
+								"search"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "thanh"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tìm kiếm người dùng",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung/search?keyword=thanh",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung",
+										"search"
+									],
+									"query": [
+										{
+											"key": "keyword",
+											"value": "thanh"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2423"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"977-YbBxYZ65+9K9xyIupLP7oQYc1Fs\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:10:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nguoiDung\": [\n        {\n            \"MaNguoiDung\": \"123\",\n            \"HoLot\": \"test edit\",\n            \"Ten\": \"test edit\",\n            \"Email\": \"test@gmail.com\",\n            \"DiaChi\": \"test edit\",\n            \"SoDienThoai\": \"test edit\",\n            \"ViTri\": \"test edit\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    1\n                ]\n            },\n            \"TrangThai\": null,\n            \"Username\": \"thanh\",\n            \"Password\": \"123123123\",\n            \"MaLoaiNguoiDung\": \"01\"\n        },\n        {\n            \"MaNguoiDung\": \"455591b6-8050-4590-8c0d-cb4315fc6da1\",\n            \"HoLot\": \"Tran1\",\n            \"Ten\": \"Thanh\",\n            \"Email\": \"t@gmail.com\",\n            \"DiaChi\": \"ct\",\n            \"SoDienThoai\": \"0123456789\",\n            \"ViTri\": \"NV\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    1\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"director\",\n            \"Password\": \"$2b$10$zxypFKrE4giC3sCIghSCs.Khewv1fbLD8AJSSoWZ3BPwolZgBDGXS\",\n            \"MaLoaiNguoiDung\": \"02\"\n        },\n        {\n            \"MaNguoiDung\": \"5d022b88-4ab9-4aaa-aa9b-7d914b26f093\",\n            \"HoLot\": \"Tran1\",\n            \"Ten\": \"Thanh\",\n            \"Email\": \"t@gmail.com\",\n            \"DiaChi\": \"ct\",\n            \"SoDienThoai\": \"0123456789\",\n            \"ViTri\": \"NV\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    1\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"manager\",\n            \"Password\": \"$2b$10$gHWNQhQcetfnUq.YZ8TuKerwXag7/ci78rYr.eZj7sOZDj9qGBtqC\",\n            \"MaLoaiNguoiDung\": \"03\"\n        },\n        {\n            \"MaNguoiDung\": \"c242103f-c06f-44b8-8c21-c1ea4d3b4c50\",\n            \"HoLot\": \"Tran1\",\n            \"Ten\": \"Thanh\",\n            \"Email\": \"t@gmail.com\",\n            \"DiaChi\": \"ct\",\n            \"SoDienThoai\": \"0123456789\",\n            \"ViTri\": \"NV\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    1\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"admin1\",\n            \"Password\": \"$2b$10$bAIMO.SHnRlslU8paWYwhOPZyFXWvD0H4ZFK.3QElVeHFVFpxwMMy\",\n            \"MaLoaiNguoiDung\": \"01\"\n        },\n        {\n            \"MaNguoiDung\": \"c9fc8097-8f3e-4ae7-a3d5-f2667679ade3\",\n            \"HoLot\": \"Tran1\",\n            \"Ten\": \"Thanh\",\n            \"Email\": \"t@gmail.com\",\n            \"DiaChi\": \"ct\",\n            \"SoDienThoai\": \"0123456789\",\n            \"ViTri\": \"NV\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    1\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"member\",\n            \"Password\": \"$2b$10$8ZDfp64nFfVOohVp7ln7I.cIgYeZpIowCefr1hdWV3subI2rsfyNi\",\n            \"MaLoaiNguoiDung\": \"04\"\n        },\n        {\n            \"MaNguoiDung\": \"ND1687228962390\",\n            \"HoLot\": \"Pham\",\n            \"Ten\": \"Thanh Thai\",\n            \"Email\": \"ptthai@gmail.com\",\n            \"DiaChi\": null,\n            \"SoDienThoai\": null,\n            \"ViTri\": null,\n            \"GioiTinh\": null,\n            \"TrangThai\": 0,\n            \"Username\": \"thanh\",\n            \"Password\": \"123123123\",\n            \"MaLoaiNguoiDung\": null\n        },\n        {\n            \"MaNguoiDung\": \"ND1687228976367\",\n            \"HoLot\": \"Pham\",\n            \"Ten\": \"Thanh Thai 2\",\n            \"Email\": \"ptthai@gmail.com\",\n            \"DiaChi\": null,\n            \"SoDienThoai\": null,\n            \"ViTri\": null,\n            \"GioiTinh\": null,\n            \"TrangThai\": 0,\n            \"Username\": \"thanh\",\n            \"Password\": \"123123123\",\n            \"MaLoaiNguoiDung\": null\n        },\n        {\n            \"MaNguoiDung\": \"ND1687873981053\",\n            \"HoLot\": \"Chua hoan thanh\",\n            \"Ten\": \"chua hoan thanh\",\n            \"Email\": \"chuahoanthanh@gmail.com\",\n            \"DiaChi\": \"Chua hoan thanh\",\n            \"SoDienThoai\": \"3123123121\",\n            \"ViTri\": \"Chua hoan thanh\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    0\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"chuahoanthanh\",\n            \"Password\": \"chuahoanthanh\",\n            \"MaLoaiNguoiDung\": null\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Thêm người dùng bằng file excel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/Q:/OneDrive/Desktop/nguoidung.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung_excel",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung_excel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "thêm excel",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/Q:/OneDrive/Desktop/nguoidung.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung_excel",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung_excel"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1993"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7c9-xumY3aPyuv1mmJJqNH3oNS1YfTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 03:22:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Thêm người dùng thành công.\",\n    \"nguoiDungs\": [\n        {\n            \"MaNguoiDung\": \"7c2b8be9-271d-4e33-84dc-095de4a52073\",\n            \"HoLot\": \"Lê Đức\",\n            \"Ten\": \"Thành\",\n            \"Email\": \"ldthanh@gmail.com\",\n            \"DiaChi\": \"ktx DHCT, đường 3/2, Ninh Kiều, Cần Thơ\",\n            \"SoDienThoai\": \"639822145\",\n            \"ViTri\": \"3\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    0\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"lethanh\",\n            \"Password\": \"$2b$10$/VBFoGPIHAgqqDPCxEQk/OaPgdvNPoPy2dSDMkedIIfv64mcnAKhq\",\n            \"MaLoaiNguoiDung\": \"1\"\n        },\n        {\n            \"MaNguoiDung\": \"79e7a8b7-c07e-491d-a91f-e3e75cd85e3c\",\n            \"HoLot\": \"Trần \",\n            \"Ten\": \"Vân\",\n            \"Email\": \"tranvan@gmail.com\",\n            \"DiaChi\": \"ktx DHCT, đường 3/2, Ninh Kiều, Cần Thơ\",\n            \"SoDienThoai\": \"352218889\",\n            \"ViTri\": \"3\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    1\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"tranvan\",\n            \"Password\": \"$2b$10$agmHYsVh0HsmDWEmjtqpb.mdfaSvxjhIm1CXpQ2/nNoxGBCna/3TK\",\n            \"MaLoaiNguoiDung\": \"1\"\n        },\n        {\n            \"MaNguoiDung\": \"498b3543-16f4-4267-80bc-8448f3948f3e\",\n            \"HoLot\": \"Đặng Thảo\",\n            \"Ten\": \"Vy\",\n            \"Email\": \"dthaovy@gmail.com\",\n            \"DiaChi\": \"ktx DHCT, đường 3/2, Ninh Kiều, Cần Thơ\",\n            \"SoDienThoai\": \"312455889\",\n            \"ViTri\": \"2\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    0\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"dangvy\",\n            \"Password\": \"$2b$10$xnRGTFzdZiMc.2y5wKKBE.ppi18FjVnyqRAMqXHrJIMmivJJ0no0i\",\n            \"MaLoaiNguoiDung\": \"2\"\n        },\n        {\n            \"MaNguoiDung\": \"5db66a16-02d4-45ed-bde2-577684e57858\",\n            \"HoLot\": \"Lê Quyển\",\n            \"Ten\": \"Dung\",\n            \"Email\": \"ldthuan@gmail.com\",\n            \"DiaChi\": \"ktx DHCT, đường 3/2, Ninh Kiều, Cần Thơ\",\n            \"SoDienThoai\": \"369855741\",\n            \"ViTri\": \"1\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    0\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"lethuan\",\n            \"Password\": \"$2b$10$1O6sUdl1AgyAc5Y0I7unh.KSlmtMk56W91oJ7CrLmSQ9f5NncGasW\",\n            \"MaLoaiNguoiDung\": \"3\"\n        },\n        {\n            \"MaNguoiDung\": \"421af509-f9cb-43d5-b4dc-b2e432188132\",\n            \"HoLot\": \"Dương\",\n            \"Ten\": \"Dân\",\n            \"Email\": \"duongdan@gmail.com\",\n            \"DiaChi\": \"ktx DHCT, đường 3/2, Ninh Kiều, Cần Thơ\",\n            \"SoDienThoai\": \"128945673\",\n            \"ViTri\": \"2\",\n            \"GioiTinh\": {\n                \"type\": \"Buffer\",\n                \"data\": [\n                    1\n                ]\n            },\n            \"TrangThai\": 0,\n            \"Username\": \"duongdan\",\n            \"Password\": \"$2b$10$Yq1zX7Df/FVyQbR42uaORuGK4jKkwPjwV6lbaOxbIXl9pdmE/Jenu\",\n            \"MaLoaiNguoiDung\": \"4\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Đổi mật khẩu người dùng",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MatKhau\": \"tranhung123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung/doimk/f3fd3bf6-affa-4444-8569-cf53ae63a264",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung",
+								"doimk",
+								"f3fd3bf6-affa-4444-8569-cf53ae63a264"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "đổi mật khẩu",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"MatKhau\": \"tranhung123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung/doimk/f3fd3bf6-affa-4444-8569-cf53ae63a264",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung",
+										"doimk",
+										"f3fd3bf6-affa-4444-8569-cf53ae63a264"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35-K1312RTB979TFTYUOtVIAy9PWUg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 02:50:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Cập nhật mật khẩu thành công.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DuAn",
+			"item": [
+				{
+					"name": "Lấy tất cả dự án",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\r\n        \"NgayBatDau\": \"1899-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"1899-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/duan/",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"duan",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy tất cả dự án",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\r\n        \"NgayBatDau\": \"1899-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"1899-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/duan/",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"duan",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2134"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"856-DfIa2fjgatIgmCO8CTX4HX7jNW4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:15:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaDuAn\": \"DA1687146180709\",\n        \"TenDuAn\": \"Du an 2\",\n        \"MoTaDuAn\": \"Không\",\n        \"NgayBatDau\": \"2023-06-15T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-15T17:00:00.000Z\",\n        \"TrangThai\": 1\n    },\n    {\n        \"MaDuAn\": \"DA1687170330052\",\n        \"TenDuAn\": \"Quản lý phân công công việc\",\n        \"MoTaDuAn\": \"hệ thống của một trang web\",\n        \"NgayBatDau\": \"2023-06-18T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-18T17:00:00.000Z\",\n        \"TrangThai\": null\n    },\n    {\n        \"MaDuAn\": \"DA1687171339681\",\n        \"TenDuAn\": \"Quản lý bán hàng\",\n        \"MoTaDuAn\": \"Hệ thống trang web\",\n        \"NgayBatDau\": \"2023-06-18T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-18T17:00:00.000Z\",\n        \"TrangThai\": 1\n    },\n    {\n        \"MaDuAn\": \"DA1687228345628\",\n        \"TenDuAn\": \"Dự án test\",\n        \"MoTaDuAn\": \"Dự án công việc test\",\n        \"NgayBatDau\": \"2023-06-17T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-17T17:00:00.000Z\",\n        \"TrangThai\": 2\n    },\n    {\n        \"MaDuAn\": \"DA1687234003874\",\n        \"TenDuAn\": \"Dự án 1\",\n        \"MoTaDuAn\": \"Dự án  1\",\n        \"NgayBatDau\": \"2023-06-19T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-19T17:00:00.000Z\",\n        \"TrangThai\": null\n    },\n    {\n        \"MaDuAn\": \"DA1687521929599\",\n        \"TenDuAn\": \"TEST BY HUYNH ANH\",\n        \"MoTaDuAn\": \"TEST BY HUYNH ANH\",\n        \"NgayBatDau\": \"2023-06-17T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-17T17:00:00.000Z\",\n        \"TrangThai\": 2\n    },\n    {\n        \"MaDuAn\": \"DA1687523434393\",\n        \"TenDuAn\": \"Du An mowis\",\n        \"MoTaDuAn\": \"Không\",\n        \"NgayBatDau\": \"2023-06-16T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-16T17:00:00.000Z\",\n        \"TrangThai\": 1\n    },\n    {\n        \"MaDuAn\": \"DA1687880126341\",\n        \"TenDuAn\": \"aaaq\",\n        \"MoTaDuAn\": \"a\",\n        \"NgayBatDau\": \"2023-06-26T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-26T17:00:00.000Z\",\n        \"TrangThai\": 1\n    },\n    {\n        \"MaDuAn\": \"DA1687881861602\",\n        \"TenDuAn\": \"phu\",\n        \"MoTaDuAn\": \"phu\",\n        \"NgayBatDau\": \"2023-06-26T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-26T17:00:00.000Z\",\n        \"TrangThai\": null\n    },\n    {\n        \"MaDuAn\": \"DA1688350052804\",\n        \"TenDuAn\": \"Du an a\",\n        \"MoTaDuAn\": \" duan\",\n        \"NgayBatDau\": \"2023-07-02T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-02T17:00:00.000Z\",\n        \"TrangThai\": null\n    },\n    {\n        \"MaDuAn\": \"DA1688356191006\",\n        \"TenDuAn\": \"anh test\",\n        \"MoTaDuAn\": null,\n        \"NgayBatDau\": null,\n        \"NgayKetThuc\": null,\n        \"TrangThai\": 1\n    },\n    {\n        \"MaDuAn\": \"DA1688440470304\",\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\n        \"NgayBatDau\": \"2022-11-28T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2022-11-28T17:00:00.000Z\",\n        \"TrangThai\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Lấy một dự án",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\r\n        \"NgayBatDau\": \"1899-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"1899-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/duan/DA1687170330052",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"duan",
+								"DA1687170330052"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy một dự án",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\r\n        \"NgayBatDau\": \"1899-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"1899-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/duan/DA1687170330052",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"duan",
+										"DA1687170330052"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"de-Kkg5CrUKUFS1FNWeMKIbbQ0dPRU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:16:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"MaDuAn\": \"DA1687170330052\",\n    \"TenDuAn\": \"Quản lý phân công công việc\",\n    \"MoTaDuAn\": \"hệ thống của một trang web\",\n    \"NgayBatDau\": \"2023-06-18T17:00:00.000Z\",\n    \"NgayKetThuc\": \"2023-06-18T17:00:00.000Z\",\n    \"TrangThai\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Thêm một dự án",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\r\n        \"NgayBatDau\": \"2022-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"2022-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/duan/",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"duan",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Thêm một dự án",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\r\n        \"NgayBatDau\": \"2022-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"2022-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/duan/",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"duan",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-kv6tqW6bIfwApRBvX71ytkAqj60\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:14:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Thêm dự án thành công\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Xóa một dự án",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\r\n        \"NgayBatDau\": \"1899-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"1899-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/duan/DA1687881861602",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"duan",
+								"DA1687881861602"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Xóa một dự án",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1 duanduanundate\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1 duanundate\",\r\n        \"NgayBatDau\": \"1899-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"1899-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/duan/DA1687881861602",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"duan",
+										"DA1687881861602"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-R4E6KDjVEQvW6ofF/M6SyNk6GRw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:17:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Xóa dự án thành công.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Chỉnh sửa dự án",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1\",\r\n        \"NgayBatDau\": \"2022-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"2022-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/duan/DA1687170330052",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"duan",
+								"DA1687170330052"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Chỉnh sửa dự án",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"TenDuAn\": \"TTTT 2023_DI19A1\",\r\n        \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1\",\r\n        \"NgayBatDau\": \"2022-11-29T17:17:56.000Z\",\r\n        \"NgayKetThuc\": \"2022-11-29T17:17:56.000Z\",\r\n        \"TrangThai\": 0\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/duan/DA1687170330052",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"duan",
+										"DA1687170330052"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "208"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d0-5/i/bQssdhYFAmk4TD2EDhFKV70\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:17:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"MaDuAn\": \"DA1687170330052\",\n    \"TenDuAn\": \"TTTT 2023_DI19A1\",\n    \"MoTaDuAn\": \"Thực tập thực tế 2023 lớp DI19A1\",\n    \"NgayBatDau\": \"2022-11-29T17:17:56.000Z\",\n    \"NgayKetThuc\": \"2022-11-29T17:17:56.000Z\",\n    \"TrangThai\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CongViec",
+			"item": [
+				{
+					"name": "Lấy tất cả công việc",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODAyNTYyOCwiZXhwIjoxNjg4MTEyMDI4fQ.xxLDfJbXCfOhgXykSoVJVulqc3TXka7hQCJtwJwA2gs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy tất cả công việc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "918"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"396-Stl5vRH15ShrsKi+LucRC9xtMoo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:18:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaCongViec\": \"200620230945255135912\",\n        \"TenCongViec\": \"Viết front-end TEST\",\n        \"MoTaCongViec\": \"Viết front-end cho dự án thực tập thực tế học kì hè năm 2022-2023\",\n        \"NgayBatDau\": \"2023-05-14T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-14T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"DA1687146180709\"\n    },\n    {\n        \"MaCongViec\": \"23062023190612608421\",\n        \"TenCongViec\": \"TEST by Huynh Anh\",\n        \"MoTaCongViec\": \"Test by Huynh Anh\",\n        \"NgayBatDau\": \"2023-05-14T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-14T17:00:00.000Z\",\n        \"TrangThai\": 0,\n        \"UuTien\": 1,\n        \"MaDuAn\": null\n    },\n    {\n        \"MaCongViec\": \"270620232222008053262\",\n        \"TenCongViec\": \"phu\",\n        \"MoTaCongViec\": \"phu\",\n        \"NgayBatDau\": null,\n        \"NgayKetThuc\": null,\n        \"TrangThai\": 2,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"DA1687523434393\"\n    },\n    {\n        \"MaCongViec\": \"27062023230545416319\",\n        \"TenCongViec\": \"phu\",\n        \"MoTaCongViec\": \"s\",\n        \"NgayBatDau\": \"2023-06-26T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-26T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"DA1687170330052\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Lấy một công việc",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODAyNTYyOCwiZXhwIjoxNjg4MTEyMDI4fQ.xxLDfJbXCfOhgXykSoVJVulqc3TXka7hQCJtwJwA2gs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec/23062023190612608421",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec",
+								"23062023190612608421"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy một công việc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec/23062023190612608421",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec",
+										"23062023190612608421"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "228"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e4-5JXykjGUShbkPJRl3jz6yOAB3Rs\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:19:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaCongViec\": \"23062023190612608421\",\n        \"TenCongViec\": \"TEST by Huynh Anh\",\n        \"MoTaCongViec\": \"Test by Huynh Anh\",\n        \"NgayBatDau\": \"2023-05-14T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-14T17:00:00.000Z\",\n        \"TrangThai\": 0,\n        \"UuTien\": 1,\n        \"MaDuAn\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Tạo một công việc trong dự án",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODAyNTYyOCwiZXhwIjoxNjg4MTEyMDI4fQ.xxLDfJbXCfOhgXykSoVJVulqc3TXka7hQCJtwJwA2gs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TenCongViec\": \"Viết chức năng đăng nhập\", \r\n    \"MoTaCongViec\": \"Viết chức năng đăng nhập cho hệ thống quản lý công việc\", \r\n    \"NgayBatDau\": \"2023-06-29\", \r\n    \"NgayKetThuc\": \"2023-07-29\", \r\n    \"TrangThai\": 0, \r\n    \"UuTien\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec/DA1687170330052",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec",
+								"DA1687170330052"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tạo một công việc trong dự án",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"TenCongViec\": \"Viết chức năng đăng nhập\", \r\n    \"MoTaCongViec\": \"Viết chức năng đăng nhập cho hệ thống quản lý công việc\", \r\n    \"NgayBatDau\": \"2023-06-29\", \r\n    \"NgayKetThuc\": \"2023-07-29\", \r\n    \"TrangThai\": 0, \r\n    \"UuTien\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec/DA1687170330052",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec",
+										"DA1687170330052"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-qdmk4u+yEBb0lWpHlmswYeZC/u4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:21:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": \"Công việc mới đã được tạo thành công.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Thêm danh sách công việc bằng file excel trong dự án",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODAyNTYyOCwiZXhwIjoxNjg4MTEyMDI4fQ.xxLDfJbXCfOhgXykSoVJVulqc3TXka7hQCJtwJwA2gs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/D:/Downloads/testCV.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviecfile/1234567890",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviecfile",
+								"1234567890"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Thêm danh sách công việc bằng file excel trong dự án",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/D:/Downloads/testCV.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviecfile/1234567890",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviecfile",
+										"1234567890"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"48-eQj4lvk7Qu1/YMJsKxk7GEREg7E\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Jun 2023 08:33:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Dữ liệu đã được thêm vào cơ sở dữ liệu.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Tìm kiếm công việc",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODAyNTYyOCwiZXhwIjoxNjg4MTEyMDI4fQ.xxLDfJbXCfOhgXykSoVJVulqc3TXka7hQCJtwJwA2gs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/timCongViec?search=Test",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"timCongViec"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Test"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tìm kiếm công việc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/timCongViec?search=Test",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"timCongViec"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "Test"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "539"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21b-gnanUTggygpQZpSichmxIc39azY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:22:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaCongViec\": \"200620230945255135912\",\n        \"TenCongViec\": \"Viết front-end TEST\",\n        \"MoTaCongViec\": \"Viết front-end cho dự án thực tập thực tế học kì hè năm 2022-2023\",\n        \"NgayBatDau\": \"2023-05-14T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-14T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"DA1687146180709\"\n    },\n    {\n        \"MaCongViec\": \"23062023190612608421\",\n        \"TenCongViec\": \"TEST by Huynh Anh\",\n        \"MoTaCongViec\": \"Test by Huynh Anh\",\n        \"NgayBatDau\": \"2023-05-14T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-14T17:00:00.000Z\",\n        \"TrangThai\": 0,\n        \"UuTien\": 1,\n        \"MaDuAn\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Lấy danh sách công việc thuộc dự án",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviecbyduan/DA1687170330052",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviecbyduan",
+								"DA1687170330052"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy danh sách công việc thuộc dự án",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviecbyduan/DA1687170330052",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviecbyduan",
+										"DA1687170330052"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "525"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20d-GBQEtKSu8yaMqQ5bz+FFwVLewz8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:23:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaCongViec\": \"040720231021266232913\",\n        \"TenCongViec\": \"Viết chức năng đăng nhập\",\n        \"MoTaCongViec\": \"Viết chức năng đăng nhập cho hệ thống quản lý công việc\",\n        \"NgayBatDau\": \"2023-06-28T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-28T17:00:00.000Z\",\n        \"TrangThai\": 0,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"DA1687170330052\"\n    },\n    {\n        \"MaCongViec\": \"27062023230545416319\",\n        \"TenCongViec\": \"phu\",\n        \"MoTaCongViec\": \"s\",\n        \"NgayBatDau\": \"2023-06-26T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-06-26T17:00:00.000Z\",\n        \"TrangThai\": 1,\n        \"UuTien\": 1,\n        \"MaDuAn\": \"DA1687170330052\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Cập nhật công việc",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"TenCongViec\": \"Viết chức năng Đăng Nhập\",\r\n        \"TrangThai\": 3,\r\n        \"UuTien\": 2\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec/040720231021266232913",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec",
+								"040720231021266232913"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cập nhật công việc",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"TenCongViec\": \"Viết chức năng Đăng Nhập\",\r\n        \"TrangThai\": 3,\r\n        \"UuTien\": 2\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec/040720231021266232913",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec",
+										"040720231021266232913"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35-RD+lYd2jXzeMhGnD58lzp8p2ucw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:25:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Cập nhật công việc thành công.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Xóa tạm thời công việc",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec/040720231021266232913",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec",
+								"040720231021266232913"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Xóa tạm thời công việc",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec/040720231021266232913",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec",
+										"040720231021266232913"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d-nzUCYPk/Al+6Rb2ayqpcHhBK4Ug\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:26:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Xóa công việc thành công.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Xóa công việc vĩnh viễn",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/xoaCongViecVinhVien/270620232222008053262",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"xoaCongViecVinhVien",
+								"270620232222008053262"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Xóa công việc vĩnh viễn",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/xoaCongViecVinhVien/270620232222008053262",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"xoaCongViecVinhVien",
+										"270620232222008053262"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-SowXA0SsJLdAxyxzdfh+23jX2+s\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:27:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Xóa công việc vĩnh viễn thành công.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Phân công công việc",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODAyNTYyOCwiZXhwIjoxNjg4MTEyMDI4fQ.xxLDfJbXCfOhgXykSoVJVulqc3TXka7hQCJtwJwA2gs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/D:/Downloads/logo.png"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/D:/Downloads/Báo cáo thực tập thực tế.docx"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/D:/Downloads/DanhSach đủ ĐK TTTT - 10-05-2023.pdf"
+								},
+								{
+									"key": "MaNguoiDung",
+									"value": "0e599adb-e28d-40b6-b05c-06b053d5f9c1",
+									"type": "default"
+								},
+								{
+									"key": "MaNguoiDung",
+									"value": "455591b6-8050-4590-8c0d-cb4315fc6da1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec/phanCongCongViec/040720231021266232913",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec",
+								"phanCongCongViec",
+								"040720231021266232913"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Phân công công việc",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/D:/Downloads/logo.png"
+										},
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/D:/Downloads/Báo cáo thực tập thực tế.docx"
+										},
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/D:/Downloads/DanhSach đủ ĐK TTTT - 10-05-2023.pdf"
+										},
+										{
+											"key": "MaNguoiDung",
+											"value": "0e599adb-e28d-40b6-b05c-06b053d5f9c1",
+											"type": "default"
+										},
+										{
+											"key": "MaNguoiDung",
+											"value": "455591b6-8050-4590-8c0d-cb4315fc6da1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec/phanCongCongViec/040720231021266232913",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec",
+										"phanCongCongViec",
+										"040720231021266232913"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-xHz6pAp35tknkIYTLMaXEhOk/kw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:28:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": \"Công việc đã được cập nhật thành công.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Chỉnh sửa phân công công việc",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODAyNTYyOCwiZXhwIjoxNjg4MTEyMDI4fQ.xxLDfJbXCfOhgXykSoVJVulqc3TXka7hQCJtwJwA2gs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/D:/Downloads/logoCTU.png"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/D:/Downloads/M-TT-05-Maubaocao.doc"
+								},
+								{
+									"key": "MaNguoiDung",
+									"value": "5d022b88-4ab9-4aaa-aa9b-7d914b26f093",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec/editPhanCongCongViec/040720231021266232913",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec",
+								"editPhanCongCongViec",
+								"040720231021266232913"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Chỉnh sửa phân công công việc",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/D:/Downloads/logoCTU.png"
+										},
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/D:/Downloads/M-TT-05-Maubaocao.doc"
+										},
+										{
+											"key": "MaNguoiDung",
+											"value": "5d022b88-4ab9-4aaa-aa9b-7d914b26f093",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec/editPhanCongCongViec/040720231021266232913",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec",
+										"editPhanCongCongViec",
+										"040720231021266232913"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-xHz6pAp35tknkIYTLMaXEhOk/kw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:32:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": \"Công việc đã được cập nhật thành công.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Lấy danh sách người dùng thuộc công việc",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODAyNTYyOCwiZXhwIjoxNjg4MTEyMDI4fQ.xxLDfJbXCfOhgXykSoVJVulqc3TXka7hQCJtwJwA2gs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidungbycongviec/040720231021266232913",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidungbycongviec",
+								"040720231021266232913"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy danh sách người dùng thuộc công việc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidungbycongviec/040720231021266232913",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidungbycongviec",
+										"040720231021266232913"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "537"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"219-QQbmqEfCCeyJ1gRu3aIzODBqAmo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:33:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaNguoiDung\": \"5d022b88-4ab9-4aaa-aa9b-7d914b26f093\",\n        \"HoLot\": \"Tran1\",\n        \"Ten\": \"Thanh\",\n        \"Email\": \"t@gmail.com\",\n        \"DiaChi\": \"ct\",\n        \"SoDienThoai\": \"0123456789\",\n        \"ViTri\": \"NV\",\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"TrangThai\": 6,\n        \"Username\": \"manager\",\n        \"Password\": \"$2b$10$gHWNQhQcetfnUq.YZ8TuKerwXag7/ci78rYr.eZj7sOZDj9qGBtqC\",\n        \"MaLoaiNguoiDung\": \"03\",\n        \"MaND_CV\": \"040720231032404633999\",\n        \"MaCongViec\": \"040720231021266232913\",\n        \"TenCongViec\": \"Viết chức năng Đăng Nhập\",\n        \"MoTaCongViec\": null,\n        \"NgayBatDau\": null,\n        \"NgayKetThuc\": null,\n        \"UuTien\": 2,\n        \"MaDuAn\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Lấy danh sách tài liệu thuộc công việc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/tailieubycongviec/040720231021266232913",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"tailieubycongviec",
+								"040720231021266232913"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lấy danh sách tài liệu thuộc công việc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/tailieubycongviec/290620231535405103121",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"tailieubycongviec",
+										"290620231535405103121"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "653"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28d-GsuAA54c5YIESl7Q/ticSuhJ1jQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Jun 2023 08:47:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaTaiLieuCV\": \"29062023154658903739\",\n        \"TenTaiLieuCV\": \"logoCTU.png\",\n        \"MaCV_TL\": \"2906202315465811457775\",\n        \"MaCongViec\": \"290620231535405103121\",\n        \"TrangThai\": 3,\n        \"TenCongViec\": \"TEST EDIT\",\n        \"MoTaCongViec\": \"Test edit\",\n        \"NgayBatDau\": \"2023-05-13T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-13T17:00:00.000Z\",\n        \"UuTien\": 2,\n        \"MaDuAn\": \"1234567890\"\n    },\n    {\n        \"MaTaiLieuCV\": \"290620231546585473819\",\n        \"TenTaiLieuCV\": \"M-TT-05-Maubaocao.doc\",\n        \"MaCV_TL\": \"290620231546581626858\",\n        \"MaCongViec\": \"290620231535405103121\",\n        \"TrangThai\": 3,\n        \"TenCongViec\": \"TEST EDIT\",\n        \"MoTaCongViec\": \"Test edit\",\n        \"NgayBatDau\": \"2023-05-13T17:00:00.000Z\",\n        \"NgayKetThuc\": \"2023-07-13T17:00:00.000Z\",\n        \"UuTien\": 2,\n        \"MaDuAn\": \"1234567890\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Chi tiết công việc với 1 số trường nhất định",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYU5ndW9pRHVuZyI6Ik5EMTY4ODAyNDk1ODUzNSIsIlVzZXJuYW1lIjoiQjE5MTAxODYiLCJNYUxvYWlOZ3VvaUR1bmciOiIwMSIsIlJvbGUiOiJhZG1pbiIsImlhdCI6MTY4ODM1MjQ5NCwiZXhwIjoxNjg4NDM4ODk0fQ.83Mgknak1fM3D0fq645cNOYdSXWv5un_E1a2gt8SpmQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/detailCongViec/040720231021266232913",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"detailCongViec",
+								"040720231021266232913"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Chi tiết công việc với 1 số trường nhất định",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/detailCongViec/040720231021266232913",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"detailCongViec",
+										"040720231021266232913"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "416"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a0-6O6R2F+HYu8ecLt0D0E7mv7B10o\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:35:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"TenCongViec\": \"Viết chức năng Đăng Nhập\",\n        \"MoTaCongViec\": null,\n        \"TrangThaiCongViec\": 6,\n        \"TenTaiLieu\": null,\n        \"HoVaTen\": \"Tran1 Thanh\"\n    },\n    {\n        \"TenCongViec\": \"Viết chức năng Đăng Nhập\",\n        \"MoTaCongViec\": null,\n        \"TrangThaiCongViec\": 6,\n        \"TenTaiLieu\": null,\n        \"HoVaTen\": \"Tran1 Thanh\"\n    },\n    {\n        \"TenCongViec\": \"Viết chức năng Đăng Nhập\",\n        \"MoTaCongViec\": null,\n        \"TrangThaiCongViec\": 6,\n        \"TenTaiLieu\": null,\n        \"HoVaTen\": \"Trần Thùy Trân\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ThongKe",
+			"item": [
+				{
+					"name": "Công việc theo trạng thái",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec/thongke",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec",
+								"thongke"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Công việc theo trạng thái",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec/thongke",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec",
+										"thongke"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-81+2C9uV2weun7X7qrFdDoPtL7I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:36:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"SoLuong\": 1\n    },\n    {\n        \"TrangThai\": \"Chưa bắt đầu\",\n        \"SoLuong\": 1\n    },\n    {\n        \"TrangThai\": \"Trạng thái 1\",\n        \"SoLuong\": 2\n    },\n    {\n        \"TrangThai\": \"Đã tạm xóa\",\n        \"SoLuong\": 2\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Công việc ưu tiên",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/congviec/uutien/thongke",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"congviec",
+								"uutien",
+								"thongke"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Công việc ưu tiên",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/congviec/uutien/thongke",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"congviec",
+										"uutien",
+										"thongke"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "89"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"59-XHdKiPUsu1+2H6lAlKBSd937CXc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:36:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"SoLuong\": 1\n    },\n    {\n        \"UuTien\": \"Ưu tiên 1\",\n        \"SoLuong\": 4\n    },\n    {\n        \"UuTien\": \"Ưu tiên 2\",\n        \"SoLuong\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Người dùng",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung/thongke",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung",
+								"thongke"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "người dùng",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung/thongke",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung",
+										"thongke"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "109"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6d-OZeZLt80GeMs8/0T40wjsAic5sA\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 03:25:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                0\n            ]\n        },\n        \"SoLuong\": 7\n    },\n    {\n        \"GioiTinh\": {\n            \"type\": \"Buffer\",\n            \"data\": [\n                1\n            ]\n        },\n        \"SoLuong\": 8\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Dự án theo trạng thái",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/duan/thongke",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"duan",
+								"thongke"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Dự án theo trạng thái",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/duan/thongke",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"duan",
+										"thongke"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "142"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e-AhH3EWoU5Ufffudkuoukdbl6CTg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:40:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"SoLuong\": 2\n    },\n    {\n        \"TrangThai\": \"Bắt đầu\",\n        \"SoLuong\": 2\n    },\n    {\n        \"TrangThai\": \"Giai đoạn 1\",\n        \"SoLuong\": 5\n    },\n    {\n        \"TrangThai\": \"Giai đoạn 2\",\n        \"SoLuong\": 2\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Công việc người dùng với trạng thái",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung_congviec/thongke",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung_congviec",
+								"thongke"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Công việc người dùng với trạng thái",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung_congviec/thongke",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung_congviec",
+										"thongke"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"88-OmqDAhVaDytqHnu6CTJGUlucjQk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:40:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"TrangThai\": \"Chưa bắt đầu\",\n        \"SoLuong\": 1\n    },\n    {\n        \"TrangThai\": \"Trạng thái 1\",\n        \"SoLuong\": 2\n    },\n    {\n        \"TrangThai\": \"Đã tạm xóa\",\n        \"SoLuong\": 3\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Số lượng công việc trong tháng hiện tại",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://113.176.87.55:12723/api/nguoidung_congviec/trongthang/thongke",
+							"protocol": "http",
+							"host": [
+								"113",
+								"176",
+								"87",
+								"55"
+							],
+							"port": "12723",
+							"path": [
+								"api",
+								"nguoidung_congviec",
+								"trongthang",
+								"thongke"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Số lượng công việc trong tháng hiện tại",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://113.176.87.55:12723/api/nguoidung_congviec/trongthang/thongke",
+									"protocol": "http",
+									"host": [
+										"113",
+										"176",
+										"87",
+										"55"
+									],
+									"port": "12723",
+									"path": [
+										"api",
+										"nguoidung_congviec",
+										"trongthang",
+										"thongke"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,accept,access_token,X-Requested-With"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "261"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"105-uYgJlWCwf1sSQf4K9QC8Hl0MUSI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 03:41:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"MaNguoiDung\": \"ND1687228962390\",\n        \"HoLot\": \"Pham\",\n        \"Ten\": \"Thanh Thai\",\n        \"SoLuongCongViec\": 1\n    },\n    {\n        \"MaNguoiDung\": \"ND1687874170341\",\n        \"HoLot\": \"Quốc\",\n        \"Ten\": \"Thái\",\n        \"SoLuongCongViec\": 1\n    },\n    {\n        \"MaNguoiDung\": \"ND1687878006133\",\n        \"HoLot\": \"Huỳnh\",\n        \"Ten\": \"Hiền\",\n        \"SoLuongCongViec\": 1\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
