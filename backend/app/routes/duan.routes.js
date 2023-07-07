@@ -12,7 +12,7 @@ duanRouter.delete('/duan/:id',  checkRole(['director', 'manager']), duanControll
 //lấy hết dự án
 duanRouter.get('/duan', checkRole(['director', 'manager']), duanController.getAllDuAn);
 //sửa dự án
-duanRouter.put('/duan/:id', c checkRole(['director', 'manager']), duanController.putDuAn);
+duanRouter.put('/duan/:id', checkRole(['director', 'manager']), duanController.putDuAn);
 //Tìm dự án theo id, phương thức GET
 duanRouter.get('/duan/:id', checkRole(['director', 'manager']), duanController.getDuAn);
 
